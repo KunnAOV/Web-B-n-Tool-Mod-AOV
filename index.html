@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bán Tool & Mod Skin Liên Quân</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding-top: 10px;
+      min-height: 70px;
+      border-bottom: #ff5733 3px solid;
+    }
+    header h1 {
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+      animation: rainbowBlink 3s linear infinite; /* Rainbow animation */
+    }
+    /* Smooth 7-color Blinking Animation */
+    @keyframes rainbowBlink {
+      0% { color: #ff5733; }
+      14% { color: #ff33ff; }
+      28% { color: #3333ff; }
+      42% { color: #33cc33; }
+      57% { color: #ffff33; }
+      71% { color: #ff9933; }
+      85% { color: #ff3333; }
+      100% { color: #ff5733; }
+    }
+    .logo-container {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      text-align: center;
+    }
+    .logo {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
+      border-radius: 50%; /* Makes the logo circular */
+      display: block;
+    }
+    .logo-text {
+      font-size: 12px;
+      color: #ff5733;
+      font-weight: bold;
+      animation: blink 1s infinite alternate;
+      margin-top: 5px;
+    }
+    @keyframes blink {
+      0% { color: #ff5733; }
+      50% { color: #ffffff; }
+      100% { color: #ff5733; }
+    }
+    .category {
+      background: #444;
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .category h2 {
+      color: #ff5733;
+    }
+    .product {
+      border: 1px solid #555;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+    .product-title {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .product-price {
+      color: #ff5733;
+      font-weight: bold;
+    }
+    .buy-button {
+      background-color: #ff5733;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .buy-button:hover {
+      background-color: #e64a19;
+    }
+    .zalo-button {
+      background-color: #ff5733;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      width: 150px; /* Fixed width for consistency */
+    }
+    .zalo-button:hover {
+      background-color: #e64a19;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo Section -->
+  <div class="logo-container">
+    <img src="logo.png" alt="Kunn AOV Logo" class="logo">
+    <div class="logo-text">Kunn AOV</div>
+  </div>
+
+  <header>
+    <h1>Kunn AOV Shop</h1>
+  </header>
+
+  <div class="container">
+    <!-- Category 1: Tool -->
+    <div class="category">
+      <h2>Tool Auto Mod Skin Liên Quân</h2>
+      
+      <div class="product">
+        <p class="product-title">Tool Auto Mod Lẻ + Pack (Loại Cao)</p>
+        <p class="product-price">Giá: 450,000 VND</p>
+        <button class="buy-button" onclick="buyProduct('Tool Aimbot', '450000')">Mua ngay</button>
+      </div>
+
+      <div class="product">
+        <p class="product-title">Tool Auto Mod Lẻ + Pack (Loại Trung)</p>
+        <p class="product-price">Giá: 380,000 VND</p>
+        <button class="buy-button" onclick="buyProduct('Tool Unlock All Skins', '380000')">Mua ngay</button>
+      </div>
+      
+      <div class="product">
+        <p class="product-title">Tool Auto Mod Lẻ + Pack (Loại Thấp)</p>
+        <p class="product-price">Giá: 200,000 VND</p>
+        <button class="buy-button" onclick="buyProduct('Tool Unlock All Skins', '200000')">Mua ngay</button>
+      </div>
+    </div>
+
+    <!-- Category 2: Mod Skin -->
+    <div class="category">
+      <h2>Tool Hỗ Trợ Làm Mod Liên Quân</h2>
+      
+      <div class="product">
+        <p class="product-title">Tool Bytes=>Xml</p>
+        <p class="product-price">Giá: 100,000 VND</p>
+        <button class="buy-button" onclick="buyProduct('Tool Aimbot', '100000')">Mua ngay</button>
+      </div>
+
+      <div class="product">
+        <p class="product-title">Tool Auto Infos Chế + Thường</p>
+        <p class="product-price">Giá: 50,000 VND</p>
+        <button class="buy-button" onclick="buyProduct('Tool Unlock All Skins', '50000')">Mua ngay</button>
+      </div>
+      
+      <div class="product">
+        <p class="product-title">Tool Auto Infos Thường</p>
+        <p class="product-price">Giá: 30,000 VND</p>
+        <button class="buy-button" onclick="buyProduct('Tool Unlock All Skins', '30000')">Mua ngay</button>
+      </div>
+      
+      <div class="product">
+        <p class="product-title">Tool Auto Mod Sound Databin Thường</p>
+        <p class="product-price">Giá: 30,000 VND</p>
+        <button class="buy-button" onclick="buyProduct('Tool Unlock All Skins', '30000')">Mua ngay</button>
+      </div>
+      
+      <div class="product">
+        <p class="product-title">Tool Auto Mod Sound Ages Thường</p>
+        <p class="product-price">Giá: 10,000 VND</p>
+        <button class="buy-button" onclick="buyProduct('Tool Unlock All Skins', '10000')">Mua ngay</button>
+      </div>
+      
+      <div class="product">
+        <p class="product-title">Tool Auto Mod Ages Thường No CheckHeroSkin</p>
+        <p class="product-price">Giá: 15,000 VND</p>
+        <button class="buy-button" onclick="buyProduct('Tool Unlock All Skins', '15000')">Mua ngay</button>
+      </div>
+      
+      <div class="product">
+        <p class="product-title">Tool Auto Mod Skill Databin Thường</p>
+        <p class="product-price">Giá: 20,000 VND</p>
+        <button class="buy-button" onclick="buyProduct('Tool Unlock All Skins', '20000')">Mua ngay</button>
+      </div>
+    </div>
+    
+    <div class="category">
+      <h2>File Mod Chế Theo Yêu Cầu</h2>
+      
+      <div class="product">
+        <p class="product-title">File phải đặt trước khoảng 1 đến 2 day sẽ nhận</p>
+        <p class="product-price">Giá: 35,000 VND</p>
+        <button class="zalo-button" onclick="window.location.href='https://zalo.me/0332673782';">Đặt Trước qua Zalo</button>
+      </div>
+    </div>
+    
+    <div class="category">
+      <h2>Mod Skin Liên Quân [Thường]</h2>
+      
+      <div class="product">
+        <p class="product-title">Mod Skin Lẻ</p>
+        <p class="product-price">Giá: 5,000 VND/1 Skin lẻ</p>
+        <button class="zalo-button" onclick="window.location.href='https://zalo.me/0332673782';">Zalo</button>
+      </div>
+
+      <div class="product">
+        <p class="product-title">Mod Skin Pack từ 10 -> 80 skin theo yêu cầu</p>
+        <p class="product-price">Giá: 2,000 VND/1 Skin trong pack</p>
+        <button class="zalo-button" onclick="window.location.href='https://zalo.me/0332673782';">Zalo</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function buyProduct(name, price) {
+      const bankDetails = "Ngân hàng: VP Bank\nSố tài khoản: 0332673782\nChủ tài khoản: Lê Bá Nam";
+      const message = `Sản phẩm: ${name}\nGiá: ${price} VND\n\n[*]Chọn hình thức thanh toán:\n\n[1].Thanh toán bằng ngân hàng.\nChuyển khoản theo thông tin sau:\n${bankDetails}\n\n[2].Thanh toán trực tiếp qua zalo.\n\n[Lưu ý: nếu thanh toán bằng ngân hàng nhớ chụp hoá đơn thanh toán rồi nhắn qua zalo để lấy file.]\n\n\t\t\t\t              <Zalo: 0332673782>`;
+      alert(message);
+    }
+  </script>
+
+</body>
+</html>
